@@ -1,0 +1,10 @@
+* {
+    cursor: url("https://cur.cursors-4u.net/games/gam-4/gam308.cur"), auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: url("https://64.media.tumblr.com/c2c9d44bbb85278eb86f093be712941d/tumblr_oxjwzlEnIE1v1wb9yo1_1280.pnj");
+}

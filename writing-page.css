@@ -1,0 +1,98 @@
+:root {
+    --pink: rgb(161, 79, 124);
+    --ivory: rgb(246, 247, 235);
+    --blue: rgb(59, 142, 165);
+    --english-violet: rgb(104, 59, 105);
+    --onyx: rgb(20, 25, 27);
+}
+
+@font-face{
+    font-family: Cheri;
+    src: url(fonts/CHERL___.TTF) format('truetype');
+}
+
+body {
+    background-image: url('pix/ditheredbedroom.png');
+    /* from https://www.reddit.com/user/Strong_Watercress_26/ */
+    background-size: cover;
+    background-color: var(--pink);
+}
+
+header {
+    color: var(--english-violet);
+    padding-right: 36px;
+    text-align: center;
+
+    h1 {
+        font-family: Cheri;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 48px;
+    }
+}
+
+nav {
+    height: 40px;
+    width: 100%;
+
+    ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        justify-content: space-evenly;
+    }
+
+    li {
+        padding-top: 10px;
+    }
+}
+
+nav li a{
+    color: var(--ivory);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+nav li a:hover {
+    color: var(--pink);
+    text-decoration: underline;
+}
+
+#story {
+    height: auto;
+    width: 800px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: 80px;
+    margin-right: 80px;
+    position: relative;
+    overflow: auto;
+    height: 800px;
+    background-color: var(--ivory);
+
+    h2 {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 24px;
+    }
+}
+
+img.absolute {
+    position: absolute;
+    height: 600px;
+    width: auto;
+    right: -100px;
+}
+
+aside {
+    color: var(--onyx);
+    padding: 10px;
+    border-radius: 25px;
+    width: 200px;
+}
+
+#rightAside {
+    background-color: transparent;
+}

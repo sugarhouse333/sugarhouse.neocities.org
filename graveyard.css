@@ -1,0 +1,83 @@
+:root{
+    --onyx: rgb(20, 25, 27);
+    --coral: rgb(239, 131, 84);
+    --ivory: rgb(246, 247, 235);
+    --english-violet: rgb(104, 59, 105);
+    --blue: rgb(59, 142, 165);
+}
+
+@font-face {
+    font-family: Calive;
+    src: url('fonts/CaliveRoughRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url('pix/graveyard-background.png');
+}
+
+header {
+    color: var(--ivory);
+    text-align: center;
+
+    h1 {
+        font-family: Calive;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 48px;
+    }
+}
+
+nav {
+    height: 40px;
+    background-color: var(--onyx);
+    width: 100%;
+
+    ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        justify-content: space-evenly;
+    }
+
+    li {
+        padding-top: 10px;
+    }
+}
+
+nav li a{
+    color: var(--ivory);
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: var(--coral);
+    text-decoration: underline;
+}
+
+aside {
+    background-color: rgba(59, 142, 165, 0.90);
+    color: var(--onyx);
+    padding: 10px;
+    border-radius: 25px;
+}
+
+main {
+    margin-left: 20px;
+    color: var(--ivory);
+}
+
+#div1 {
+    padding: 10px;
+    border: 2px dashed var(--ivory);
+    border-radius: 25px;
+    background-color: rgba(104, 59, 105, 0.90);
+}
+
+.account-name {
+    font-style: italic;
+    font-size: larger;
+    color: var(--coral);
+}
