@@ -83,8 +83,7 @@ ul li {
     padding-bottom: 1px;
     font-size: 16px;
     margin: 0;
-    color: rgb(59, 31, 221);
-    text-shadow: 2px 2px 4px #ffffff;
+    color: rgb(80, 80, 80);
 }
 
 ul li a {
@@ -106,9 +105,11 @@ ul li a:hover {
     text-decoration: none;
     font-family: Handwriting;
     text-align: center;
-    color: #ffffff;
+    background-image: url('pix/backdream.gif');
+    height: 27px;
+    width: 87px;
     margin: 4px;
 }
 #return:hover {
-    color: rgb(152, 151, 241);
+    background-image: url('pix/backdreamhover.gif');
 }
