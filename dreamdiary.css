@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    cursor: url("https://downloads.totallyfreecursors.com/cursor_files/fish.ani"), url("https://downloads.totallyfreecursors.com/thumbnails/fish.gif"), auto;
+}
+
 @font-face {
     font-family: Dunk Tank;
     src: url('fonts/Kbdunktank-A5ag.ttf') format('truetype');
