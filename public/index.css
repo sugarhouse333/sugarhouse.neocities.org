@@ -125,9 +125,10 @@ aside {
 }
 
 main {
+    border: 2px dashed rgb(196, 196, 196);
     margin-top: 12px;
     flex: 1;
-    padding: 20px;
+    margin: 20px;
     order: 2;
 
 }
