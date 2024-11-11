@@ -86,12 +86,17 @@ article {
     box-shadow: 1px 1px 8px rgb(209, 178, 204);
     background-color: rgba(255, 234, 252, 0.75);
     margin: 8px;
+    width: 400px;
 }
 article img{
     border: 12px solid transparent;
     border-image: url(pix/109-1092094_frame-photo-background-cadre-photo-design-carr-alu.png) 30 round;
-    height: 350px;
+    height: 250px;
     width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 article h2{
     font-family: Calive;
@@ -103,15 +108,7 @@ article h2{
     margin-left: auto;
     margin-right: auto;
 }
-#first-column {
-    width: auto;
-    float: left;
-}
-#second-column {
-    width: auto;
-    float: left;
-}
-#third-column{
+#columns {
     width: auto;
     float: left;
 }
@@ -123,13 +120,4 @@ article h2{
 }
 #notes {
     padding: 4px;
-}
-
-#BigChallenges {
-    background-image: url("pix/bigchallenges-window.png");
-    width: 360px;
-    height: 300px;
-}
-#BigChallenges:hover {
-    background-image: url("pix/bigchallenges-window2.png");
 }

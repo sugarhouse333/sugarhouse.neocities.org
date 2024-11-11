@@ -27,3 +27,13 @@ function linksHover(x, image) {
         image.src = 'pix/links.gif'
     }
 }
+
+function challengesHover(x, image) {
+    if (x==1) {
+        image.src = 'pix/bigchallenges-window2.png'
+    }
+
+    if (x==2) {
+        image.src = 'pix/bigchallenges-window.png'
+    }
+}
