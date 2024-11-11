@@ -55,7 +55,7 @@
                 <div style="display: flex;">
                     <article>
                         <h2 id="challengesmsg">click on big challenges i dare u</h2>
-                        <img id="challenges" src="pix/challenges1.png" onclick="patChallenges()">
+                        <img id="challenges" src="pix/challenges1.png" onclick="patChallenges(this)">
                         <p>thank u for the best gift ever</p>
                     </article>
                     <article style="margin-left: 12px; width: 100%;">
@@ -70,8 +70,9 @@
                 </article>
             </main>
         <aside id="rightSidebar">
-            <a href="dreamdiary_061124.html"><img src="pix/dreams.gif"></a>
-            <a href="gallery.html"><img src="pix/gallery.gif"></a>
+            <a href="dreamdiary_061124.html"><img src="pix/dreams.gif" onmouseover="dreamHover(1, this)" onmouseout="dreamHover(2, this)"></a>
+            <a href="gallery.html"><img src="pix/gallery.gif" onmouseover="galleryHover(1, this)" onmouseout="galleryHover(2, this)"></a>
+            <a href="resources.html"><img src="pix/links.gif" onmouseover="linksHover(1,this)" onmouseout="linksHover(2,this)"></a>
             <div>
                 <a href="https://hekate.neocities.org" target="_blank"><img src="pix/cat.PNG"></a> 
                 <h1>say hiiii :D</h1>
