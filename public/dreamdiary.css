@@ -16,8 +16,13 @@ html, body {
     src: url('fonts/Handwriting.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: The Night One;
+    src: url('fonts/TheNightOne-Yzpyo.otf');
+}
+
 header {
-    color: rgb(255, 255, 255);
+    color: rgb(250, 247, 210);
     font-family: Dunk Tank;
     letter-spacing: 4px;
     font-size: 48px;
@@ -33,25 +38,33 @@ body {
 
 main {
     order: 2;
-    min-height: 700px;
     width: 70%
 }
- article {
+article {
     background-image: url('pix/paper.jpg');
     max-width: 564px;
     padding: 8px;
-    box-shadow: 0px 0px 12px #ffffff;
-    font-family: Handwriting;
+    box-shadow: 0px 0px 12px rgb(250, 247, 210);
     text-shadow: 2px 2px 4px #ffffff;
- }
- article p {
+}
+article p {
     margin-top: 0;
     font-size: 18px;
- }
+    font-family: Handwriting;
+}
+article h3 {
+    font-family: The Night One;
+    font-size: 36px;
+    margin: 0;
+    padding-left: 4px;
+    color: rgba(80, 56, 25);
+}
 
 footer {
     padding-top: 16px;
     padding-left: 8px;
+    font-family: Handwriting;
+    text-align: center;
 }
 footer div {
     color: rgb(250, 247, 210);
@@ -67,8 +80,7 @@ footer div {
     display: flex;
     flex-direction: row;
     border: 12px solid transparent;
-    border-image: url('pix/lgmarb3.png');
-    border-image-repeat: repeat;
+    border-image-source: url('pix/lgmarb3.png');
     background-image: url('https://i.pinimg.com/564x/4d/42/63/4d4263a663ed53770d2c6dc126622139.jpg');
     background-size: 500px;
 }
@@ -76,6 +88,8 @@ footer div {
 aside {
     margin-top: 12px;
     width: 30%;
+    font-family: The Night One;
+    background-color: rgba(80, 56, 25, 0.5);
 }
 
 ul {
@@ -85,19 +99,19 @@ ul {
 
 ul li {
     padding-bottom: 1px;
-    font-size: 16px;
+    font-size: 20px;
     margin: 0;
-    color: rgb(80, 80, 80);
+    color: rgb(255, 240, 220);
 }
 
 ul li a {
-    margin-bottom: 12px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 4px;
+    color:rgb(255, 240, 220);
 }
-
 ul li a:hover {
-    color:rgb(142, 129, 255);
+    color: rgb(255, 197, 122);
+}
+ul li i {
+    color:rgb(184, 164, 139)
 }
 
 #leftSidebar {
