@@ -3,20 +3,11 @@
     --body-bg-image: url('https://64.media.tumblr.com/ec2f01259b2fb980b52c923a9adf188b/145fd94558712c9b-78/s2048x3072/c9c708028d682ee15ec3231417996b69773e5088.jpg');
     --aside-bg-image: url('pix/pale_010.jpg');
 
-    /* Accent 2: Kelly Green */
-    --accent-2-darker-80: #14270a;
-    --accent-2-darker-40: #3b741e;
-    --accent-2-darker-20: #4f9a28;
-    --accent-2: #63C132;
-    --accent-2-lighter-20: #82cd5b;
-    --accent-2-lighter-40: #a1da84;
-    --accent-2-lighter-80: #e0f3d6;
-
-    --accent-5-highlight: #fff3fd;
-    --accent-5: #DE0D92;
-
- /* Other colours I thought were cool: 96705B DE0D92 #CE4760 #5C2751 89043D*/ 
-
+    --pale-blue: #D9F8FB;
+    --pale-green: #9FCF80;
+    --rose-pink: #FB9AE6;
+    --sky-blue: #1B92CC;
+    --true-pink: #CC5CAA;
 }
 * {
     box-sizing: border-box;
@@ -60,8 +51,6 @@ body {
 
 header {
     height: 48px;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: var(--accent-5);
     margin-top: 4px;
     padding-left: 16px;
     position: relative;
@@ -77,16 +66,9 @@ header {
 
 #flex {
     display: flex;
+    background-color: rgb(from var(--rose-pink) r g b / 0.4);
+    border: 2px dashed var(--rose-pink);
 }
-
-aside {
-    font-size: smaller;
-    margin-top: 10px;
-    padding-top: 2px;
-    border: 4px outset rgb(255, 255, 255);
-    max-width: 300px;
-}
-
 main {
     margin-top: 12px;
     flex: 1;
@@ -103,14 +85,33 @@ nav ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
-    justify-content: space-evenly;
-    background-color: #13092D;
+    justify-content: space-around;
+    height: 100%;
 }
 nav ul li {
     padding: 0;
     margin: 0;
-    color: white;
-    font-size: 24px;
+    height: 100%;
+    width: 100%;
+}
+nav ul li button {
+    width: 100%;
+    height: 100%;
+    border: 4px outset var(--sky-blue);
+    background-color: var(--sky-blue);
+    font-family: Kiddosy;
+    font-size: 18px;
+    color: var(--pale-blue);
+}
+nav ul li button:hover {
+    border-color: hsl(from var(--sky-blue) h s 30%);
+    background-color: hsl(from var(--sky-blue) h s 30%);
+    color: hsl(from var(--pale-blue) h s 50%);
+}
+nav ul li button:active {
+    border-color: hsl(from var(--sky-blue) 55 s l);
+    background-color: hsl(from var(--sky-blue) 55 s l);
+    color: hsl(from var(--pale-blue) 55 s l);
 }
 
 article {
@@ -124,27 +125,17 @@ article {
     position: relative;
 }
 
-#imgfloat {
-    position: absolute;
-    height: 120px;
-    width: auto;
-    left: 80px;
-    bottom: 0px;
+aside {
+    font-size: smaller;
+    margin-top: 10px;
+    padding-top: 2px;
+    max-width: 300px;
 }
-
 #leftSidebar {
-    background-color: whitesmoke;
-    width: 300px;
+    min-width: 300px;
 }
-
 #rightSidebar {
     order: 3;
-    background-image: var(--aside-bg-image);
-    h1 {
-        font-family: Kiddosy;
-        text-align: center;
-        color: var(--tropical-indigo-lighter-80);
-    }
 }
 
 #challenges {
