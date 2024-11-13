@@ -18,12 +18,14 @@
  /* Other colours I thought were cool: 96705B DE0D92 #CE4760 #5C2751 89043D*/ 
 
 }
-
+* {
+    box-sizing: border-box;
+}
 html, body {
     cursor: url(https://file.garden/ZwtqNziYoEL_MBDY/Wii%20Pointer%20Open%20Hand.cur), auto;
 }
 
-a:hover {
+a, button:hover {
     cursor: url(https://file.garden/ZwtqNziYoEL_MBDY/Wii%20Pointer.cur), auto;
 }
 
@@ -50,11 +52,10 @@ body {
     margin: 0;
     background-image: var(--body-bg-image);
     background-attachment: fixed;
-    max-width: 80%;
-}
-
-* {
-    box-sizing: border-box;
+    max-width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
@@ -74,44 +75,48 @@ header {
     width: auto;
 }
 
-footer {
-    text-align: center;
-    color: var(--accent-2-lighter-20);
-}
-footer p {
-    color: var(--accent-2-lighter-80);
-    margin: 0;
-}
-footer h3 {
-    margin: 0;
-}
-
 #flex {
     display: flex;
 }
 
 aside {
-    padding: 20px;
     font-size: smaller;
     margin-top: 10px;
     padding-top: 2px;
     border: 4px outset rgb(255, 255, 255);
+    max-width: 300px;
 }
 
 main {
     margin-top: 12px;
     flex: 1;
     padding: 2px;
-    margin: 20px;
     order: 2;
+}
 
+nav {
+    height: 40px;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+    background-color: #13092D;
+}
+nav ul li {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 24px;
 }
 
 article {
     background-image: url('pix/pale_010.jpg');
     height: auto;
     width: auto;
-    padding: 4px 24px;
     border: 4px outset rgb(255, 255, 255);
 }
 
@@ -127,15 +132,14 @@ article {
     bottom: 0px;
 }
 
+#leftSidebar {
+    background-color: whitesmoke;
+    width: 300px;
+}
 
 #rightSidebar {
-    order: 2;
-    margin-left: 10px;
+    order: 3;
     background-image: var(--aside-bg-image);
-    background-size: 150px;
-    width: 250px;
-    margin-right: 20px;
-
     h1 {
         font-family: Kiddosy;
         text-align: center;
@@ -166,29 +170,12 @@ h1 {
 
 p {
     font-family: Handwriting;
-    font-size: 18px;
-}
-
-.divider {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#topBar {
-    width: 100%;
-    height: 30px;
-    padding: 10px;
-    font-size: smaller;
-    background-color: #13092D;
+    font-size: 16px;
 }
 
 #statuscafe {
     padding: .5em;
     background-color: transparent;
-    border: 3px solid midnightblue;
     font-family: Handwriting;
 }
 #statuscafe-username {
@@ -196,4 +183,15 @@ p {
 }
 #statuscafe-content {
     margin: 0 1em 0.5em 1em;
+}
+footer {
+    text-align: center;
+    color: var(--accent-2-lighter-20);
+}
+footer p {
+    color: var(--accent-2-lighter-80);
+    margin: 0;
+}
+footer h3 {
+    margin: 0;
 }
