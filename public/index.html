@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="index.css">
         <link rel="icon" href="https://64.media.tumblr.com/08de6dbfb4dc793ad803842487dc689c/b4746bdbb4997815-30/s75x75_c1/e113674abedfb44e71e4ac318415bebb6bc19bd8.gifv">
         <script src="index.js"></script>
+        <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
         <title>Sugarhouse Home</title>
     </head>
     <body>
@@ -15,71 +16,134 @@
             <img id="header-sticker" src="https://64.media.tumblr.com/7c5c3c9cb3dbfc897a042702de7c11f2/d6da92bb4eef31ff-8a/s250x400/3f7433eacf314be00d31d593a822e6177fbd24ff.gifv">
             <img src="pix/frankies place.gif" style="padding-left: 56px;">
           </header>
-          <div style="margin-left: 64px; margin-top: 4px;">
-            <img src="buttons/80x15/Sheherpin.png" alt="She/Her (Wind green star)">
-            <img src="buttons/80x15/potspin.png" alt="POTS">
-            <img src="buttons/80x15/ocdpin.png" alt="OCD">
-            <img src="buttons/80x15/adhdpin.png" alt="ADHD">
-            <img src="buttons/80x15/monthjuly.gif" alt="July birth month">
-            <img src="buttons/80x15/leosun.png" alt="Leo Sun">
-            <img src="buttons/80x15/taurusmoon.png" alt="Taurus Moon">
-            <img src="buttons/80x15/cancerasc.png" alt="Cancer Rising">
-            <img src="buttons/80x15/waterram.png" alt="Water Goat">
-            <img src="buttons/80x15/infjpin.png" alt="INFJ">
-            <img src="buttons/80x15/msn.png">
-            <img src="https://i.imgur.com/8w07QtP.png" alt="Homestuck Aspect Time">
-            <img src="https://i.imgur.com/NcJZJ06.png" alt="Lawful Good">
-        </div>
         <div id="flex">
             <main>
-              <article>
-                <p>
-                  I've created a <a href="dreamdiary_061124">dream diary</a> page! <br>
-                  Check it out if you're interested and feel free to analyse my ocd nightmares. <br>
-                  who knows how long this will last though bc my psych wants to put me on dream surpressing anti anxiety meds.
-                </p>
-              </article>
-              <br>
-              <article>
-                <p>
-                  welcome p;<br>
-                  i'm still learning as i go with html and css and js and stuff so sorry the sites kinda eh
-                <p>
-                <p>you can listen to me play memory by alex g though if you want</p>
-                <audio controls>
-                  <source src="https://file.garden/ZwtqNziYoEL_MBDY/memory.mp3" type="audio/mp3">
-                  Your browser does not support the audio element.
-                </audio>
-              </article>
-                <br>
-                <div style="display: flex;">
-                    <article>
-                        <h2 id="challengesmsg">click on big challenges i dare u</h2>
-                        <img id="challenges" src="pix/challenges1.png" onclick="patChallenges()">
-                        <p>thank u for the best gift ever</p>
-                    </article>
-                    <article style="margin-left: 12px; width: 100%;">
-                        <a href="https://web.archive.org/web/20021208145104/http://gaz.nu/radiohead" target="_blank"><img src="pix/jonny.gif"></a>
-                        <a href="https://hekate.neocities.org" target="_blank"><img src="pix/hekaterockerquiz.png"></a>
-                        <iframe id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=sugarhouse&lightmode=true"></iframe>
-                    </article>
-                </div>
+              <nav>
+                <ul>
+                  <li><button onclick="togglePage(1)">home</button></li>
+                  <li><button onclick="togglePage(2)">about me</button></li>
+                  <li><button onclick="togglePage(3)">blog</a></li>
+                  <li><button onclick="togglePage(4)">chat</a></li>
+                  <li><button onclick="togglePage(5)">guestbook</a></li>
+                </ul>
+              </nav>
+              <div id="home" style="display: block;">
+                <article>
+                  <p>
+                    ok ok it's looking really messy right now,,, i have a plan... i'm just not great with doing everything all in one go
+                    so i'm just going to post it, let it be messy, and update it as i go. it makes it fun to check back too and see whats changed!
+                    apologies though bc its def uhhh, in a state.
+                  </p>
+                  <p>you can listen to me play memory by alex g in the meantime if you want</p>
+                  <audio controls>
+                    <source src="https://file.garden/ZwtqNziYoEL_MBDY/memory.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                  </audio>
+                  <hr>
+                  <a href="https://hekate.neocities.org" target="_blank"><img src="pix/cat.PNG"></a>
+                  <a href="https://web.archive.org/web/20021208145104/http://gaz.nu/radiohead" target="_blank"><img src="pix/jonny.gif"></a>
+                  <a href="https://hekate.neocities.org" target="_blank"><img src="pix/hekaterockerquiz.png"></a> 
+                </article>
                 <br>
                 <article>
-                    <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=sugarhouse" defer></script>
+                  <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=sugarhouse" defer></script>
                 </article>
+                <div style="display: flex;">
+                  <article>
+                    <h2 id="challengesmsg">click on big challenges i dare u</h2>
+                    <img id="challenges" src="pix/challenges1.png" onclick="patChallenges()">
+                      <p>thank u for the best gift ever</p>
+                  </article>
+                  <article style="width: 100%;">  
+                  </article>
+                </div>
+              </div>
+              <div id="about" style="display: none;">
+                <div>
+                  <img src="buttons/80x15/Sheherpin.png" alt="She/Her (Wind green star)">
+                  <img src="buttons/80x15/potspin.png" alt="POTS">
+                  <img src="buttons/80x15/ocdpin.png" alt="OCD">
+                  <img src="buttons/80x15/adhdpin.png" alt="ADHD">
+                  <img src="buttons/80x15/monthjuly.gif" alt="July birth month">
+                  <img src="buttons/80x15/leosun.png" alt="Leo Sun">
+                  <img src="buttons/80x15/taurusmoon.png" alt="Taurus Moon">
+                  <img src="buttons/80x15/cancerasc.png" alt="Cancer Rising">
+                  <img src="buttons/80x15/waterram.png" alt="Water Goat">
+                  <img src="buttons/80x15/infjpin.png" alt="INFJ">
+                  <img src="buttons/80x15/msn.png">
+                  <img src="https://i.imgur.com/8w07QtP.png" alt="Homestuck Aspect Time">
+                  <img src="https://i.imgur.com/NcJZJ06.png" alt="Lawful Good">
+              </div>
+                <p>about meee blah blah blah</p>
+              </div>
+              <div id="blog" style="display: none;">
+                <h1>blog placeholder</h1>
+              </div>
+              <div id="chat" style="display: none;">
+                <h1>say hiiii :D</h1>
+                <iframe src="https://www3.cbox.ws/box/?boxid=3541343&boxtag=TUKrNb" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+              </div>
+              <div id="guestbook" style="display: none;">
+                <h1>guestbook placeholder</h1>
+              </div>
             </main>
+            <aside id="leftSidebar">
+              <div style="width:40px; height:40px; position:absolute; top:270px; left:170px;">
+                <div id="winamp-container"></div>
+                  <script>
+              const Winamp = window.Webamp;
+              // All configuration options are optional.
+              const webamp = new Webamp({
+                  // Optional.
+                  initialTracks: [
+                      {
+                          metaData: {
+                              artist: "Alex G",
+                              title: "Muppet",
+                          },
+                          url: "https://file.garden/ZwtqNziYoEL_MBDY/05%20-%20Alex%20G%20-%20Muppet.mp3",
+                      }, {
+                          metaData: {
+                              artist: "Dinosaur Jr.",
+                              title: "In A Jar",
+                          },
+                          url: "https://file.garden/ZwtqNziYoEL_MBDY/07%20In%20A%20Jar.mp3",
+                      },
+                      {
+                          metaData: {
+                              artist: "Alex G",
+                              title: "Big World",
+                          },
+                          url: "https://file.garden/ZwtqNziYoEL_MBDY/Alex%20G%20-%20WINNER%20-%2006%20Big%20World.mp3",
+                      },
+                      {
+                          metaData: {
+                              artist: "Porter Robinson",
+                              title: "Mona Lisa",
+                          },
+                          url: "https://file.garden/ZwtqNziYoEL_MBDY/Porter%20Robinson%20-%20SMILE!%20-D%20-%2008%20-%20Mona%20Lisa.mp3",
+                      },
+                      {
+                          metaData: {
+                              artist: "Benee",
+                              title: "Soft Side",
+                          },
+                          url: "https://file.garden/ZwtqNziYoEL_MBDY/02%20Soft%20Side.mp3",
+                      },
+                    ],
+                  initialSkin: {
+                      url: "https://file.garden/ZwtqNziYoEL_MBDY/Sketch_by_Ryu.wsz"
+                  },
+              });
+              webamp.renderWhenReady(document.getElementById('winamp-container'));
+              </script>
+              </div>
+            </aside>
         <aside id="rightSidebar">
             <a href="dreamdiary_061124.html"><img src="pix/dreams.gif" id="asideNav" onmouseover="dreamHover(1, this)" onmouseout="dreamHover(2, this)"></a>
             <a href="gallery.html"><img src="pix/gallery.gif" id="asideNav" onmouseover="galleryHover(1, this)" onmouseout="galleryHover(2, this)"></a>
-            <a href="resources.html"><img src="pix/links.gif" id="asideNav" onmouseover="linksHover(1,this)" onmouseout="linksHover(2,this)"></a>
-            <div>
-                <a href="https://hekate.neocities.org" target="_blank"><img src="pix/cat.PNG"></a> 
-                <h1>say hiiii :D</h1>
-                <!--
-                <script type="text/javascript" src="//counter.websiteout.com/js/31/6/0/1"></script> -->
-            </div>
-           <!-- <iframe src="https://www3.cbox.ws/box/?boxid=3541343&boxtag=TUKrNb" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>-->	
+            <a href="resources.html"><img src="pix/links.gif" id="asideNav" onmouseover="linksHover(1, this)" onmouseout="linksHover(2, this)"></a>
+            <iframe id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=sugarhouse&lightmode=true"></iframe>	
         </aside>
         </div>
         <footer>
@@ -119,7 +183,7 @@
             </div>
             <hr>
             <h3>hosted on neocities</h3>
-            <p>last updated 11th of November 2024</p>
+            <p>last updated 13th of November 2024</p>
         </footer>
     </body>
 </html>

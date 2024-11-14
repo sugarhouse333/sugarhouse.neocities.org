@@ -3,27 +3,20 @@
     --body-bg-image: url('https://64.media.tumblr.com/ec2f01259b2fb980b52c923a9adf188b/145fd94558712c9b-78/s2048x3072/c9c708028d682ee15ec3231417996b69773e5088.jpg');
     --aside-bg-image: url('pix/pale_010.jpg');
 
-    /* Accent 2: Kelly Green */
-    --accent-2-darker-80: #14270a;
-    --accent-2-darker-40: #3b741e;
-    --accent-2-darker-20: #4f9a28;
-    --accent-2: #63C132;
-    --accent-2-lighter-20: #82cd5b;
-    --accent-2-lighter-40: #a1da84;
-    --accent-2-lighter-80: #e0f3d6;
-
-    --accent-5-highlight: #fff3fd;
-    --accent-5: #DE0D92;
-
- /* Other colours I thought were cool: 96705B DE0D92 #CE4760 #5C2751 89043D*/ 
-
+    --pale-blue: #D9F8FB;
+    --pale-green: #9FCF80;
+    --rose-pink: #FB9AE6;
+    --sky-blue: #1B92CC;
+    --true-pink: #CC5CAA;
 }
-
+* {
+    box-sizing: border-box;
+}
 html, body {
     cursor: url(https://file.garden/ZwtqNziYoEL_MBDY/Wii%20Pointer%20Open%20Hand.cur), auto;
 }
 
-a:hover {
+a, button:hover {
     cursor: url(https://file.garden/ZwtqNziYoEL_MBDY/Wii%20Pointer.cur), auto;
 }
 
@@ -50,16 +43,14 @@ body {
     margin: 0;
     background-image: var(--body-bg-image);
     background-attachment: fixed;
-}
-
-* {
-    box-sizing: border-box;
+    max-width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
     height: 48px;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: var(--accent-5);
     margin-top: 4px;
     padding-left: 16px;
     position: relative;
@@ -73,44 +64,60 @@ header {
     width: auto;
 }
 
-footer {
-    text-align: center;
-    color: var(--accent-2-lighter-20);
-}
-footer p {
-    color: var(--accent-2-lighter-80);
-    margin: 0;
-}
-footer h3 {
-    margin: 0;
-}
-
 #flex {
     display: flex;
+    background-color: rgb(from var(--rose-pink) r g b / 0.4);
+    border: 2px dashed var(--rose-pink);
 }
-
-aside {
-    padding: 20px;
-    font-size: smaller;
-    margin-top: 10px;
-    padding-top: 2px;
-    border: 4px outset rgb(255, 255, 255);
-}
-
 main {
     margin-top: 12px;
     flex: 1;
     padding: 2px;
-    margin: 20px;
     order: 2;
+}
 
+nav {
+    height: 40px;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-around;
+    height: 100%;
+}
+nav ul li {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+nav ul li button {
+    width: 100%;
+    height: 100%;
+    border: 4px outset var(--sky-blue);
+    background-color: var(--sky-blue);
+    font-family: Kiddosy;
+    font-size: 18px;
+    color: var(--pale-blue);
+}
+nav ul li button:hover {
+    border-color: hsl(from var(--sky-blue) h s 30%);
+    background-color: hsl(from var(--sky-blue) h s 30%);
+    color: hsl(from var(--pale-blue) h s 50%);
+}
+nav ul li button:active {
+    border-color: hsl(from var(--sky-blue) 55 s l);
+    background-color: hsl(from var(--sky-blue) 55 s l);
+    color: hsl(from var(--pale-blue) 55 s l);
 }
 
 article {
     background-image: url('pix/pale_010.jpg');
     height: auto;
     width: auto;
-    padding: 4px 24px;
     border: 4px outset rgb(255, 255, 255);
 }
 
@@ -118,28 +125,17 @@ article {
     position: relative;
 }
 
-#imgfloat {
-    position: absolute;
-    height: 120px;
-    width: auto;
-    left: 80px;
-    bottom: 0px;
+aside {
+    font-size: smaller;
+    margin-top: 10px;
+    padding-top: 2px;
+    max-width: 300px;
 }
-
-
+#leftSidebar {
+    min-width: 300px;
+}
 #rightSidebar {
-    order: 2;
-    margin-left: 10px;
-    background-image: var(--aside-bg-image);
-    background-size: 150px;
-    width: 250px;
-    margin-right: 20px;
-
-    h1 {
-        font-family: Kiddosy;
-        text-align: center;
-        color: var(--tropical-indigo-lighter-80);
-    }
+    order: 3;
 }
 
 #challenges {
@@ -165,29 +161,12 @@ h1 {
 
 p {
     font-family: Handwriting;
-    font-size: 18px;
-}
-
-.divider {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#topBar {
-    width: 100%;
-    height: 30px;
-    padding: 10px;
-    font-size: smaller;
-    background-color: #13092D;
+    font-size: 16px;
 }
 
 #statuscafe {
     padding: .5em;
     background-color: transparent;
-    border: 3px solid midnightblue;
     font-family: Handwriting;
 }
 #statuscafe-username {
@@ -195,4 +174,15 @@ p {
 }
 #statuscafe-content {
     margin: 0 1em 0.5em 1em;
+}
+footer {
+    text-align: center;
+    color: var(--accent-2-lighter-20);
+}
+footer p {
+    color: var(--accent-2-lighter-80);
+    margin: 0;
+}
+footer h3 {
+    margin: 0;
 }
