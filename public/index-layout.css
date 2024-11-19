@@ -17,7 +17,6 @@ header {
     padding-left: 16px;
     position: relative;
     padding-top: 2px;
-    background-color: purple;
 }
 #title {
     position: absolute;
@@ -95,7 +94,6 @@ main {
 }
 #status {
     padding: 4px;
-    background-color: blueviolet;
 }
 nav {
     height: 40px;

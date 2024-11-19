@@ -33,6 +33,14 @@ a, button:hover {
   font-family: Handwriting;
   src: url('fonts/Handwriting.ttf') format('truetype');
 }
+@font-face {
+    font-family: Planet Earth;
+    src: url('fonts/Kbplanetearth-wxwz.ttf') format('truetype');
+}
+@font-face {
+    font-family: Avoxlost;
+    src: url('fonts/Kbanavoxlost-gajq.ttf') format('truetype');
+}
 /* ... */
 
 /* Text Styling */
@@ -45,6 +53,51 @@ h1 {
 p {
     font-family: Handwriting;
     font-size: 16px;
+}
+/* ... */
+
+/* Header Styling */
+header {
+    background-image: url('pix/dividers/flowers3.gif');
+    background-repeat: repeat-x;
+    background-position-y: bottom;
+}
+
+/* ... */
+
+/* Home Styling */
+
+/*
+will use this later when its relevant
+
+#status-border {
+    background-image: url('https://img1.picmix.com/output/stamp/normal/7/0/9/4/254907_17c7a.gif');
+}
+*/
+#status {
+    position: relative;
+    /* background-color: rgb(from var(--pale-green) r g b / 0.8); */
+    background-color: var(--pale-green);
+}
+#statuscafe-username {
+    padding-left: 8px;
+    font-family: Kiddosy;
+}
+#statuscafe-content {
+    padding: 4px 0px 2px 16px;
+    font-family: Avoxlost;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-weight: bold;
+    font-size: 16px;
+}
+#statuscafe-timestamp {
+    position: absolute;
+    font-family: Planet Earth;
+    font-size: 12px;
+    top: 10px;
+    left: 180px;
+    font-style: italic;
 }
 /* ... */
 
@@ -121,13 +174,6 @@ article {
 }
 #challengesmsg {
     text-align: center;
-}
-
-#statuscafe-username {
-    margin-bottom: .5em;
-}
-#statuscafe-content {
-    margin: 0 1em 0.5em 1em;
 }
 
 footer {
