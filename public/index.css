@@ -11,9 +11,6 @@
     --honey-yellow: #E49F20;
     --baby-yellow: #ffdd99;
 }
-* {
-    box-sizing: border-box;
-}
 html, body {
     cursor: url(https://file.garden/ZwtqNziYoEL_MBDY/Wii%20Pointer%20Open%20Hand.cur), auto;
 }
@@ -51,49 +48,7 @@ p {
 }
 /* ... */
 
-
-body {
-    margin: 0;
-    background-image: var(--body-bg-image);
-    background-attachment: fixed;
-    max-width: 95%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Header styling */
-header {
-    height: 48px;
-    margin-top: 4px;
-    padding-left: 16px;
-    position: relative;
-    padding-top: 2px;
-}
-#header-sticker {
-    position: absolute;
-    top: 2px;
-    height: 60px;
-    width: auto;
-}
-
-#flex {
-    display: flex;
-    background-color: rgb(from var(--rose-pink) r g b / 0.4);
-    border: 2px dashed var(--rose-pink);
-}
-main {
-    margin-top: 12px;
-    flex: 1;
-    padding: 2px;
-    order: 2;
-}
-
 /* Navigation button styling */
-nav {
-    height: 40px;
-    width: 100%;
-}
 nav ul {
     display: flex;
     padding: 0;
@@ -159,20 +114,6 @@ article {
     position: relative;
 }
 
-/* Aside styling */
-aside {
-    font-size: smaller;
-    margin-top: 10px;
-    padding-top: 2px;
-    max-width: 300px;
-}
-#leftSidebar {
-    min-width: 300px;
-}
-#rightSidebar {
-    order: 3;
-}
-
 #challenges {
     display: block;
     margin-left: auto;
@@ -182,11 +123,6 @@ aside {
     text-align: center;
 }
 
-#statuscafe {
-    padding: .5em;
-    background-color: transparent;
-    font-family: Handwriting;
-}
 #statuscafe-username {
     margin-bottom: .5em;
 }
