@@ -143,6 +143,10 @@ nav ul li button:active {
 iframe {
     background-image: url(pix/ditheredstars.png);
 }
+#guestbook {
+    border: 4px solid var(--baby-yellow);
+    background-color: var(--baby-yellow);
+}
 
 article {
     background-image: url('pix/pale_010.jpg');
