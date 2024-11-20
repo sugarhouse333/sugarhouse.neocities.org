@@ -51,27 +51,19 @@ aside {
 /* currently cut out marquee */
 #buttons {
     margin-top: 24px;
-    background-color: pink;
-    height: 250px;
+    height: 260px;
     display: flex;
-    overflow-y: auto;
+    align-items: center;
+    overflow-y: scroll;
 }
 #buttons-column {
-    position: relative;
+    display: block;
     float: left;
     height: 100%;
-    /* animation: vertical-buttons 8s 0.5s linear infinite; */
-    margin-left: 2px;
 }
-/*
-#buttons-column:hover {
-    animation-play-state: paused;
+#buttons-column img {
+    margin: 2px;
 }
-@keyframes vertical-buttons {
-    from {transform: translateY(0)}
-    to {transform: translateY(-100%)}
-}
-*/
 
 #rightSidebar {
     order: 3;

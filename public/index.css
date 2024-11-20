@@ -176,6 +176,31 @@ article {
     text-align: center;
 }
 
+#buttons {
+    background-image: url('https://64.media.tumblr.com/02b0f9d76e9736fefc9bfbcb10c5b71d/c33ef4067bcde5db-d5/s250x400/ae2db3835d0b452096143136890504ff8e9f9a33.gifv');
+    box-shadow: 0px 0px 12px var(--sky-blue);
+    scrollbar-color: black var(--sky-blue);
+    border: 2px inset var(--sky-blue);
+}
+#buttons-column {
+    height: 200%;
+    /*
+    animation: vertical-buttons 8s linear infinite alternate;
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+@keyframes vertical-buttons {
+    from {
+        top: 100%;
+    }
+    to {
+        top: 0;
+    }
+    */
+}
+
+
 footer {
     text-align: center;
     color: var(--accent-2-lighter-20);
