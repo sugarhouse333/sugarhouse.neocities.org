@@ -77,7 +77,6 @@ will use this later when its relevant
 #status {
     position: relative;
     /* background-color: rgb(from var(--pale-green) r g b / 0.8); */
-    background-color: var(--pale-green);
 }
 #statuscafe-username {
     padding-left: 8px;
@@ -100,6 +99,19 @@ will use this later when its relevant
     font-style: italic;
 }
 /* ... */
+
+#todo {
+    background-image: url('pix/torn-paper.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#todo h3 {
+    text-align: center;
+    font-family: Avoxlost;
+    font-size: 24px;
+    color: var(--baby-yellow);
+    margin-top: 8px;
+}
 
 /* Navigation button styling */
 nav ul {

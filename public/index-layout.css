@@ -100,7 +100,7 @@ nav {
     height: 400px;
     overflow-y:auto;
 }
-#img-log-container {
+#img-todo-container {
     display: flex;
     width: 100%;
     height: 250px;
@@ -110,14 +110,13 @@ nav {
     float: left;
     height: 100%;
     background-color: coral;
-    width: 60%;
+    width: 58%;
     margin-right: 24px;
 }
-#log {
+#todo {
     float: left;
     height: 100%;
-    background-color: yellowgreen;
-    width: 40%;
+    width: 42%;
     margin-left: 24px;
 }
 
