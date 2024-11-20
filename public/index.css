@@ -169,10 +169,9 @@ iframe {
 }
 
 article {
-    background-image: url('pix/pale_010.jpg');
-    height: auto;
-    width: auto;
-    border: 4px outset rgb(255, 255, 255);
+    background-image: url('pix/bg/bg.jpg');
+    border: 4px dashed var(--rose-pink);
+    padding: 8px;
 }
 
 #container {
