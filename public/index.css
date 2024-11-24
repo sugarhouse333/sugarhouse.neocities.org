@@ -69,37 +69,6 @@ header {
     background-image: url(pix/pale_010.jpg);
 }
 
-#minimenu-border {
-    padding: 12px;
-}
-
-#minimenu {
-    box-shadow: 1px 1px 14px 12px var(--honey-yellow) inset;
-    background-color: rgba(from var(--honey-yellow) r g b / 0.5);
-    border-radius: 8px;
-    border: 4px solid var(--honey-yellow);
-}
-
-/* Home Styling */
-#marquee {
-    position: relative;
-    width: 100%;
-    overflow-x: hidden;
-    height: 30px;
-    margin: 6px;
-}
-#blinkies {
-    position: absolute;
-    white-space: nowrap;
-    will-change: transition;
-    animation: marquee 32s linear infinite;
-}
-@keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-}
-
-
 #status-border {
     /* background-image: url('https://img1.picmix.com/output/stamp/normal/7/0/9/4/254907_17c7a.gif'); */
     padding: 12px;
@@ -109,6 +78,7 @@ header {
     background-color: rgba(from var(--true-pink) r g b / 0.5);
     border-radius: 8px;
     box-shadow: 1px 1px 8px 4px var(--true-pink) inset;
+    border: 4px solid var(--true-pink);
 }
 #statuscafe-username {
     padding-left: 8px;
@@ -129,20 +99,6 @@ header {
     top: 10px;
     left: 180px;
     font-style: italic;
-}
-/* ... */
-
-#todo {
-    background-image: url('pix/torn-paper.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-#todo h3 {
-    text-align: center;
-    font-family: Avoxlost;
-    font-size: 24px;
-    color: var(--baby-yellow);
-    margin-top: 8px;
 }
 
 /* Navigation button styling */
@@ -166,22 +122,83 @@ nav ul li button {
     border: none;
     font-family: Kiddosy;
     font-size: 18px;
-    color: hsl(40, 100%, 90%);
+    color: hsl(from var(--sky-blue) h s 90%);
     background-color: rgba(1, 1, 1, 0);
 }
 nav ul li button:hover {
-    color: hsl(from var(--honey-yellow) h s 40%);
+    color: hsl(from var(--sky-blue) h s 40%);
+}
+nav ul li button:active {
+    color: hsl(from var(--sky-blue) h s 30%);
 }
 
-nav ul li button:active {
-    color: hsl(from var(--honey-yellow) 30 s 70%);
+#minimenu-border {
+    padding: 12px;
+}
+#minimenu {
+    box-shadow: 1px 1px 14px 12px var(--sky-blue) inset;
+    background-color: rgba(from var(--sky-blue) r g b / 0.5);
+    border-radius: 8px;
+    border: 4px solid var(--sky-blue);
 }
 /* ... */
 
-#chat {
-    border: 4px solid var(--baby-yellow);
-    background-color:var(--baby-yellow);
+
+/* Home Styling */
+article {
+    background-image: url('pix/bg/starbub2.gif');
+    border: 4px dashed var(--sky-blue);
+    padding: 8px;
+    border-radius: 8px;
+    color: var(--pale-blue);
+    margin: 0px 16px;
 }
+#marquee {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    height: 30px;
+    margin: 6px;
+}
+#blinkies {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transition;
+    animation: marquee 32s linear infinite;
+}
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* ... */
+
+#todo {
+    background-image: url('pix/torn-paper.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#todo h3 {
+    text-align: center;
+    font-family: Avoxlost;
+    font-size: 24px;
+    color: #ddb1fa;
+    margin-top: 8px;
+}
+#todo ul li {
+    list-style-image: url('pix/lgmarb3.png');
+    color: #ddb1fa;
+    font-family: Avoxlost;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-weight: bold;
+}
+#recent-image img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #chatdivider {
     height: 19px;
     width: 100%;
@@ -189,18 +206,14 @@ nav ul li button:active {
     margin-top: 8px;
     margin-bottom: 8px;
 }
-iframe {
-    background-image: url(pix/ditheredstars.png);
-}
-#guestbook {
-    border: 4px solid var(--baby-yellow);
-    background-color: var(--baby-yellow);
-}
 
-article {
-    background-image: url('pix/bg/bg.jpg');
-    border: 4px dashed var(--rose-pink);
-    padding: 8px;
+#guestbook {
+    text-align: center;
+}
+#gbiframe {
+    background-image: url('pix/bg/beachbg.gif');
+    width: 860px;
+    height: 480px;
 }
 
 #container {
@@ -216,6 +229,14 @@ article {
     text-align: center;
 }
 
+/* Left Aside */
+#music-player {
+    box-shadow: 1px 1px 14px 12px var(--honey-yellow) inset;
+    background-color: rgba(from var(--honey-yellow) r g b / 0.5);
+    border-radius: 8px;
+    border: 4px solid var(--honey-yellow); 
+}
+
 #buttons {
     background-image: url('https://64.media.tumblr.com/02b0f9d76e9736fefc9bfbcb10c5b71d/c33ef4067bcde5db-d5/s250x400/ae2db3835d0b452096143136890504ff8e9f9a33.gifv');
     box-shadow: 0px 0px 12px var(--sky-blue);
@@ -224,21 +245,36 @@ article {
 }
 #buttons-column {
     height: 200%;
-    /*
-    animation: vertical-buttons 8s linear infinite alternate;
-    &:hover {
-        animation-play-state: paused;
-    }
 }
-@keyframes vertical-buttons {
-    from {
-        top: 100%;
-    }
-    to {
-        top: 0;
-    }
-    */
+#buttons-column img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+/* ... */
+
+/* Right Aside */
+#external-nav {
+    background-color: rgba(from var(--pale-blue) r g b / 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px 4px #abdcdf inset;
+    border: 4px solid #abdcdf; 
+}
+#external-nav img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#webring-space {
+    background-color: rgba(from var(--pale-green) r g b / 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px 4px var(--pale-green) inset;
+    border: 4px solid var(--pale-green); 
+    padding: 8px;
+    min-width: 250px;
+}
+/* ... */
 
 
 footer {
