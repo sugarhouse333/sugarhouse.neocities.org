@@ -134,6 +134,7 @@ nav ul li button:active {
 
 #minimenu-border {
     padding: 12px;
+    height: 100%;
 }
 #minimenu {
     box-shadow: 1px 1px 14px 12px var(--sky-blue) inset;
@@ -278,7 +279,12 @@ article {
     box-shadow: 1px 1px 8px 4px var(--pale-green) inset;
     border: 4px solid var(--pale-green); 
     padding: 8px;
-    min-width: 250px;
+    min-width: 320px;
+}
+#bucket-webring {
+    width: 100%;
+    height: 3rem;
+    border: none;
 }
 /* ... */
 
@@ -293,4 +299,5 @@ footer p {
 }
 footer h3 {
     margin: 0;
+    font-family: Planet Earth;
 }

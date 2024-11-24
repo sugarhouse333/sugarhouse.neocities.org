@@ -36,7 +36,6 @@ header {
 aside {
     font-size: smaller;
     padding-top: 2px;
-    max-width: 330px;
 }
 #leftSidebar {
     order: 1;
