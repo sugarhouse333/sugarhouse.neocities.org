@@ -65,18 +65,50 @@ header {
 
 /* ... */
 
-/* Home Styling */
+#contents {
+    background-image: url(pix/pale_010.jpg);
+}
 
-/*
-will use this later when its relevant
+#minimenu-border {
+    padding: 12px;
+}
+
+#minimenu {
+    box-shadow: 1px 1px 14px 12px var(--honey-yellow) inset;
+    background-color: rgba(from var(--honey-yellow) r g b / 0.5);
+    border-radius: 8px;
+    border: 4px solid var(--honey-yellow);
+}
+
+/* Home Styling */
+#marquee {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    height: 30px;
+    margin: 6px;
+}
+#blinkies {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transition;
+    animation: marquee 32s linear infinite;
+}
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
 
 #status-border {
-    background-image: url('https://img1.picmix.com/output/stamp/normal/7/0/9/4/254907_17c7a.gif');
+    /* background-image: url('https://img1.picmix.com/output/stamp/normal/7/0/9/4/254907_17c7a.gif'); */
+    padding: 12px;
 }
-*/
 #status {
     position: relative;
-    /* background-color: rgb(from var(--pale-green) r g b / 0.8); */
+    background-color: rgba(from var(--true-pink) r g b / 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px 4px var(--true-pink) inset;
 }
 #statuscafe-username {
     padding-left: 8px;
@@ -132,19 +164,16 @@ nav ul li button {
     width: 100%;
     height: 100%;
     border: none;
-    background-image: linear-gradient(var(--honey-yellow), var(--baby-yellow));
     font-family: Kiddosy;
     font-size: 18px;
     color: hsl(40, 100%, 90%);
+    background-color: rgba(1, 1, 1, 0);
 }
 nav ul li button:hover {
-    border-color: hsl(from var(--honey-yellow) h s 70%);
-    background-image: linear-gradient(hsl(40, 80%, 30%), hsl(40, 100%, 70%));
-    color: hsl(from var(--honey-yellow) h s 70%);
+    color: hsl(from var(--honey-yellow) h s 40%);
 }
+
 nav ul li button:active {
-    border-color: hsl(from var(--honey-yellow) 30 s 70%);
-    background-image: linear-gradient(hsl(30, 80%, 30%), hsl(30, 80%, 70%));
     color: hsl(from var(--honey-yellow) 30 s 70%);
 }
 /* ... */

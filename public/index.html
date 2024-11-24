@@ -28,89 +28,98 @@
                 </div>
                 <script src="statuscafe.js" defer></script>
               </div>
-              <nav>
-                <ul>
-                  <li><button onclick="togglePage(1)">home</button></li>
-                  <li><button onclick="togglePage(2)">about me</button></li>
-                  <li><button onclick="togglePage(3)">blog</a></li>
-                  <li><button onclick="togglePage(4)">chat</a></li>
-                  <li><button onclick="togglePage(5)">guestbook</a></li>
-                </ul>
-              </nav>
-              <div id="center-contents">
-                <div id="home" style="display: block;">
-                  <div id="recent-post">
-                    <article>
-                      <p>
-                        ok its getting somewhere,,, i actually think its coming along pretty well ! just ignore the silly colours, it'll make sense eventually...
-                      </p>
-                      <p>you can listen to me play memory by alex g in the meantime if you want</p>
-                      <audio controls>
-                        <source src="https://file.garden/ZwtqNziYoEL_MBDY/memory.mp3" type="audio/mp3">
-                        Your browser does not support the audio element.
-                      </audio>
-                      <hr>
-                      <a href="https://hekate.neocities.org" target="_blank"><img src="pix/cat.PNG"></a>
-                      <a href="https://web.archive.org/web/20021208145104/http://gaz.nu/radiohead" target="_blank"><img src="pix/jonny.gif"></a>
-                      <a href="https://hekate.neocities.org" target="_blank"><img src="pix/hekaterockerquiz.png"></a> 
-                    </article>
-                    <!-- Will put challenges in gallery at some point :3 -->
-                    <!--
-                    <article>
-                      <h2 id="challengesmsg">click on big challenges i dare u</h2>
-                      <img id="challenges" src="pix/challenges1.png" onclick="patChallenges()">
-                        <p>thank u for the best gift ever</p>
-                    </article>
-                    -->
-                  </div>
-                  <div id="img-todo-container">
-                    <div id="recent-image">
-
+              <div id="minimenu-border">
+                <div id="minimenu">
+                  <nav>
+                    <ul>
+                      <li><button onclick="togglePage(1)">home</button></li>
+                      <li><button onclick="togglePage(2)">about me</button></li>
+                      <li><button onclick="togglePage(3)">blog</a></li>
+                      <li><button onclick="togglePage(4)">chat</a></li>
+                      <li><button onclick="togglePage(5)">guestbook</a></li>
+                    </ul>
+                  </nav>
+                  <div id="center-contents">
+                    <div id="home" style="display: block;">
+                      <div id="marquee">
+                        <div id="blinkies">
+                          <img src="buttons/blinkies/heart.gif">
+                        </div>
+                      </div>
+                      <div id="recent-post">
+                        <article>
+                          <p>
+                            ok its getting somewhere,,, i actually think its coming along pretty well ! just ignore the silly colours, it'll make sense eventually...
+                          </p>
+                          <p>you can listen to me play memory by alex g in the meantime if you want</p>
+                          <audio controls>
+                            <source src="https://file.garden/ZwtqNziYoEL_MBDY/memory.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                          </audio>
+                          <hr>
+                          <a href="https://hekate.neocities.org" target="_blank"><img src="pix/cat.PNG"></a>
+                          <a href="https://web.archive.org/web/20021208145104/http://gaz.nu/radiohead" target="_blank"><img src="pix/jonny.gif"></a>
+                          <a href="https://hekate.neocities.org" target="_blank"><img src="pix/hekaterockerquiz.png"></a> 
+                        </article>
+                        <!-- Will put challenges in gallery at some point :3 -->
+                        <!--
+                        <article>
+                          <h2 id="challengesmsg">click on big challenges i dare u</h2>
+                          <img id="challenges" src="pix/challenges1.png" onclick="patChallenges()">
+                            <p>thank u for the best gift ever</p>
+                        </article>
+                        -->
+                      </div>
+                      <div id="img-todo-container">
+                        <div id="recent-image">
+    
+                        </div>
+                        <div id="todo">
+                          <h3>to do</h3>
+    
+                        </div>
+                      </div>
                     </div>
-                    <div id="todo">
-                      <h3>to do</h3>
-
+                    <div id="about" style="display: none;">
+                      <div>
+                        <img src="buttons/80x15/Sheherpin.png" alt="She/Her (Wind green star)">
+                        <img src="buttons/80x15/potspin.png" alt="POTS">
+                        <img src="buttons/80x15/ocdpin.png" alt="OCD">
+                        <img src="buttons/80x15/adhdpin.png" alt="ADHD">
+                        <img src="buttons/80x15/monthjuly.gif" alt="July birth month">
+                        <img src="buttons/80x15/leosun.png" alt="Leo Sun">
+                        <img src="buttons/80x15/taurusmoon.png" alt="Taurus Moon">
+                        <img src="buttons/80x15/cancerasc.png" alt="Cancer Rising">
+                        <img src="buttons/80x15/waterram.png" alt="Water Goat">
+                        <img src="buttons/80x15/infjpin.png" alt="INFJ">
+                        <img src="buttons/80x15/msn.png">
+                        <!-- <img src="https://i.imgur.com/8w07QtP.png" alt="Homestuck Aspect Time"> -->
+                        <!-- <img src="https://i.imgur.com/NcJZJ06.png" alt="Lawful Good"> -->
                     </div>
+                    <div>
+                      <img src="buttons/colours.jpg">
+                      <img src="buttons/guitar.jpg"> 
+                      <img src="buttons/luck.jpg">
+                      <img src="buttons/scrappydoo.jpg">
+                    </div>
+                      <p>about meee blah blah blah</p>
+                    </div>
+                    <div id="blog" style="display: none;">
+                      <h1>blog placeholder</h1>
+                    </div>
+                    <div id="chat" style="display: none;">
+                      <div id="chatdivider"></div>
+                      <iframe src="https://www3.cbox.ws/box/?boxid=3541343&boxtag=TUKrNb" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+                      <div id="chatdivider"></div>
+                    </div>
+                    <div id="guestbook" style="display: none;">
+                      <div id="chatdivider"></div>
+                      <h1>guestbook placeholder</h1>
+                      <iframe src="https://sugarhouse.atabook.org" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0"></iframe>
+                      <div id="chatdivider"></div>
+                    </div>  
                   </div>
                 </div>
-                <div id="about" style="display: none;">
-                  <div>
-                    <img src="buttons/80x15/Sheherpin.png" alt="She/Her (Wind green star)">
-                    <img src="buttons/80x15/potspin.png" alt="POTS">
-                    <img src="buttons/80x15/ocdpin.png" alt="OCD">
-                    <img src="buttons/80x15/adhdpin.png" alt="ADHD">
-                    <img src="buttons/80x15/monthjuly.gif" alt="July birth month">
-                    <img src="buttons/80x15/leosun.png" alt="Leo Sun">
-                    <img src="buttons/80x15/taurusmoon.png" alt="Taurus Moon">
-                    <img src="buttons/80x15/cancerasc.png" alt="Cancer Rising">
-                    <img src="buttons/80x15/waterram.png" alt="Water Goat">
-                    <img src="buttons/80x15/infjpin.png" alt="INFJ">
-                    <img src="buttons/80x15/msn.png">
-                    <!-- <img src="https://i.imgur.com/8w07QtP.png" alt="Homestuck Aspect Time"> -->
-                    <!-- <img src="https://i.imgur.com/NcJZJ06.png" alt="Lawful Good"> -->
-                </div>
-                <div>
-                  <img src="buttons/colours.jpg">
-                  <img src="buttons/guitar.jpg"> 
-                  <img src="buttons/luck.jpg">
-                  <img src="buttons/scrappydoo.jpg">
-                </div>
-                  <p>about meee blah blah blah</p>
-                </div>
-                <div id="blog" style="display: none;">
-                  <h1>blog placeholder</h1>
-                </div>
-                <div id="chat" style="display: none;">
-                  <div id="chatdivider"></div>
-                  <iframe src="https://www3.cbox.ws/box/?boxid=3541343&boxtag=TUKrNb" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
-                  <div id="chatdivider"></div>
-                </div>
-                <div id="guestbook" style="display: none;">
-                  <div id="chatdivider"></div>
-                  <h1>guestbook placeholder</h1>
-                  <iframe src="https://sugarhouse.atabook.org" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0"></iframe>
-                  <div id="chatdivider"></div>
-                </div>  
               </div>
             </main>
             <aside id="leftSidebar">
