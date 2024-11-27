@@ -187,12 +187,15 @@ article {
     text-align: center;
     font-family: Avoxlost;
     font-size: 24px;
-    color: #ddb1fa;
+    color: var(--honey-yellow);
     margin-top: 8px;
 }
+#todo ul {
+    height: 90px;
+}
 #todo ul li {
-    list-style-image: url('pix/lgmarb3.png');
-    color: #ddb1fa;
+    list-style-image: url('buttons/bullets/bulf4.gif');
+    color: var(--baby-yellow);
     font-family: Avoxlost;
     letter-spacing: 2px;
     word-spacing: 4px;
@@ -289,6 +292,11 @@ article {
     width: 100%;
     height: 3rem;
     border: none;
+}
+#webring-space iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* ... */
 
